@@ -22,10 +22,6 @@ RUN apt-get update && \
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-# Install Tendermint.
-# RUN curl -L https://git.io/fFfOR | bash && \
-#     source ~/.profile
-
 RUN curl -LO https://github.com/tendermint/tendermint/releases/download/v0.31.8/tendermint_v0.31.8_linux_amd64.zip && \
     unzip tendermint_v0.31.8_linux_amd64.zip
 
